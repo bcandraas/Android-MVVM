@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+        app:startDestination="@id/listVoucherFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="io.bintang.todo.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_listVoucherFragment"
+            app:destination="@id/listVoucherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listVoucherFragment"
+        android:name="io.bintang.todo.ui.home.list.ListVoucherFragment"
+        android:label="ListVoucherFragment"
+        tools:layout="@layout/fragment_list_voucher"/>
+</navigation>
